@@ -34,38 +34,45 @@
 		}
 		.card {
 			display: inline-block;
-			background: #FEFEFE;
-			border: 2px solid #FAFAFA;
-			box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+			background: #f5f5f5;
+			border:1px solid #ddd;
+			box-shadow: 0 1px 1px rgba(0,0,0,.05);
 			margin: 0 2px 15px;
 			-webkit-column-break-inside: avoid;
 			-moz-column-break-inside: avoid;
 			column-break-inside: avoid;
-			padding: 15px;
-			padding-bottom: 5px;
+			padding: 15px 0 0 0;
 			opacity: 1;
 			-webkit-transition: all .2s ease;
 			-moz-transition: all .2s ease;
 			-o-transition: all .2s ease;
 			transition: all .2s ease;
-
+			border-radius: 4px;
+			min-width: 300px;
 		}
-		.card h3 {
+		.card h2 {
+			padding: 0 5px 0 10px;
+			margin: 0;
+		}
+		.info h3 {
 			font-size: 10pt;
 			color: #252525;
 			font-weight: normal;
 			margin-bottom: 1em;
 			font-family: sans;
+			padding: 0;
+			margin: 0;
 		}
 		.download {
 			text-decoration: none;
 			color: #333;
 			float: right;
 			min-height: 48px;
-			padding-right: 50px;
+			width: 15px;
 			background: url('download.png') center right no-repeat;
 			background-size: 15px;
 			opacity: .5;
+			margin: -10px 10px;
 		}
 		.card:hover .download {
 			text-decoration: underline;
@@ -77,7 +84,7 @@
 			font-weight: normal;
 			margin-bottom: 0;
 			text-align: left;
-			border-bottom: 2px solid #ddd;
+			border-bottom: 1px solid #ddd;
 		}
 		.card p {
 			font-size: 1em;
@@ -85,13 +92,17 @@
 			white-space: pre-wrap;
 			margin: 0;
 			word-break: break-word;
+			background: #fefefe;
+			padding: 10px;
+			border-bottom: 1px solid #ddd;
 		}
 		.info {
-			margin-top: 2em;
+			margin-top: 0;
 			font-size: 10px;
 			color: #252525;
 			font-weight: normal;
 			margin-bottom: 1em;
+			padding: 0 10px;
 			font-family: serif;
 		}
 		.info a {
@@ -172,10 +183,10 @@
 			<div class="Meera card">
 				<a class="download" href="//smc.org.in/downloads/fonts/meera/Meera.ttf" title="Download"></a>
 				<h2>മീര</h2>
-				<h3>Meera by K H Hussain</h3>
 				<p>സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.
 				</p>
 				<div class="info">
+					<h3>Meera by K H Hussain</h3>
 					<span>License: GPL 3+FE</span>|
 					<span>Version: 6.1.1</span>|
 					<span>Webfonts: <a href="//smc.org.in/downloads/fonts/meera/Meera.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/meera/Meera.woff2">WOFF2</a></span>
@@ -184,10 +195,10 @@
 			<div class="Rachana card">
 				<a class="download" href="//smc.org.in/downloads/fonts/rachana/Rachana.ttf" title="Download"></a>
 				<h2>രചന</h2>
-				<h3>Rachana by K H Hussain</h3>
 				<p>സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.
 				</p>
 				<div class="info">
+					<h3>Rachana by K H Hussain</h3>
 					<span>License: GPL 2+FE</span>|
 					<span>Version: 6.1.1</span>|
 					<span>Webfonts: <a href="//smc.org.in/downloads/fonts/rachana/Rachana.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/rachana/Rachana.woff2">WOFF2</a></span>
@@ -196,10 +207,10 @@
 			<div class="AnjaliOldLipi card">
 				<a class="download" href="//smc.org.in/downloads/fonts/anjalioldlipi/AnjaliOldLipi.ttf" title="Download"></a>
 				<h2>അഞ്ജലി ഓള്‍ഡ് ലിപി</h2>
-				<h3>AnjaliOldLipi by Kevin & Siji</h3>
 				<p>സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.
 				</p>
 				<div class="info">
+					<h3>AnjaliOldLipi by Kevin & Siji</h3>
 					<span>License: GPL 3+FE</span>|
 					<span>Version: 6.1.1</span>|
 					<span>Webfonts: <a href="//smc.org.in/downloads/fonts/anjalioldlipi/AnjaliOldLipi.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts//anjalioldlipi/AnjaliOldLipi.woff2">WOFF2</a></span>
@@ -208,10 +219,10 @@
 			<div class="Chilanka card">
 				<a class="download" href="//smc.org.in/downloads/fonts/chilanka/Chilanka.ttf" title="Download"></a>
 				<h2>ചിലങ്ക</h2>
-				<h3>Chilanka by Santhosh Thottingal</h3>
 				<p>സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.
 				</p>
 				<div class="info">
+					<h3>Chilanka by Santhosh Thottingal</h3>
 					<span>License: OFL 1.1</span>|
 					<span>Version: 1.0</span>|
 					<span>Webfonts: <a href="//smc.org.in/downloads/fonts/chilanka/Chilanka.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/chilanka/Chilanka.woff2">WOFF2</a></span>
@@ -220,10 +231,10 @@
 			<div class="Dyuthi card">
 				<a class="download" href="//smc.org.in/downloads/fonts/dyuthi/Dyuthi.ttf" title="Download"></a>
 				<h2>ദ്യുതി</h2>
-				<h3>Dyuthi by Hiran Venugopalan</h3>
 				<p>സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.
 				</p>
 				<div class="info">
+					<h3>Dyuthi by Hiran Venugopalan</h3>
 					<span>License: GPL 3+FE</span>|
 					<span>Version: 1.0</span>|
 					<span>Webfonts: <a href="//smc.org.in/downloads/fonts/dyuthi/Dyuthi.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/dyuthi/Dyuthi.woff2">WOFF2</a></span>
@@ -232,10 +243,10 @@
 			<div class="RaghuMalayalamSans card">
 				<a class="download" href="//smc.org.in/downloads/fonts/raghumalayalamsans/RaghuMalayalamSans.ttf" title="Download"></a>
 				<h2>രഘു മലയാളം</h2>
-				<h3>Raghu Malayalam by R K Joshi</h3>
 				<p>സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.
 				</p>
 				<div class="info">
+					<h3>Raghu Malayalam by R K Joshi</h3>
 					<span>License: GPL 2</span>|
 					<span>Version: 2.0.1</span>|
 					<span>Webfonts: <a href="//smc.org.in/downloads/fonts/raghumalayalamsans/RaghuMalayalamSans.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/raghumalayalamsans/RaghuMalayalamSans.woff2">WOFF2</a></span>
@@ -244,10 +255,10 @@
 			<div class="Suruma card">
 				<a class="download" href="//smc.org.in/downloads/fonts/suruma/Suruma.ttf" title="Download"></a>
 				<h2>സുറുമ</h2>
-				<h3>Suruma by Suresh P</h3>
 				<p>സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.
 				</p>
 				<div class="info">
+					<h3>Suruma by Suresh P</h3>
 					<span>License: GPL 3+FE</span>|
 					<span>Version: 6.1.1</span>|
 					<span>Webfonts: <a href="//smc.org.in/downloads/fonts/suruma/Suruma.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/suruma/Suruma.woff2">WOFF2</a></span>
@@ -262,10 +273,10 @@
 			<div class="Keraleeyam card">
 				<a class="download" href="//smc.org.in/downloads/fonts/keraleeyam/Keraleeyam.ttf" title="Download"></a>
 				<h2>കേരളീയം</h2>
-				<h3>Keraleeyam by Hussain K H</h3>
 				<p>സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.
 				</p>
 				<div class="info">
+					<h3>Keraleeyam by Hussain K H</h3>
 					<span>License: OFL 1.1</span>|
 					<span>Version: 1.0-beta</span>|
 					<span>Webfonts: <a href="//smc.org.in/downloads/fonts/keraleeyam/Keraleeyam.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/keraleeyam/Keraleeyam.woff2">WOFF2</a></span>
@@ -274,18 +285,19 @@
 		</div>
 	</div>
 	<script>
-		var paragraphs = document.querySelectorAll('p'),
-			input = document.querySelector('textarea');
+		var paragraphs = document.querySelectorAll( 'p' ),
+			input = document.querySelector( 'textarea' );
 
-		input.addEventListener('input', function () {
-			for (var i = 0, paragraph; paragraph = paragraphs[i]; i++) {
+		input.addEventListener( 'input', function () {
+			for ( var i = 0, paragraph; paragraph = paragraphs[ i ]; i++ ) {
 				paragraph.textContent = input.value;
 			}
-		});
+		} );
 	</script>
 </body>
 
 </html>
+
 
 
 
