@@ -24,6 +24,18 @@
   unicode-range: U+0D01-0D7F;
 }
 
+@font-face {
+  font-family: 'Rachana';
+  font-style: bold;
+  font-weight: 700;
+  src: url(http://smc.org.in/downloads/fonts/rachana/Rachana-Bold.eot?v=6.1);/* IE9 Compat Modes */
+  src: url(http://smc.org.in/downloads/fonts/rachana/Rachana-Bold.eot?v=6.1#iefix) format('embedded-opentype'), /* IE6-IE8 */
+    url(http://smc.org.in/downloads/fonts/rachana/Rachana-Bold.woff2?v=6.1) format('woff2'),
+    url(http://smc.org.in/downloads/fonts/rachana/Rachana-Bold.woff?v=6.1) format('woff'),
+    url(http://smc.org.in/downloads/fonts/rachana/Rachana-Bold.ttf?v=6.1) format('truetype');
+  unicode-range: U+0D01-0D7F;
+}
+
 /* AnjaliOldLipi */
 @font-face {
   font-family: 'AnjaliOldLipi';
@@ -103,4 +115,3 @@
     url(http://smc.org.in/downloads/fonts/keraleeyam/Keraleeyam.ttf?v=1.0.0-beta) format('truetype');
 	unicode-range: U+0D01-0D7F;
 }
-
