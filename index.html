@@ -72,17 +72,29 @@
             transition: all .2s ease;
             border-radius: 4px;
             min-width: 280px;
+            position: relative;
         }
         
         .cards {
             position: relative;
             display: inline-block;
+            margin-bottom: 50px;
         }
         
-        .card:nth-child(2) {
+        .cards .card:nth-child(1) {
+            z-index: 2;
+            top: 40px;
+        }
+        
+        .cards .card:nth-child(2) {
             position: absolute;
-            top: 0;
-            display: none;
+            z-index: 1;
+            top: 0px;
+        }
+        
+        .cards .card:hover {
+            z-index: 3;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
         
         .card h2 {
@@ -270,7 +282,6 @@
                         <span>Version: 6.1.1</span>|
                         <span>Webfonts: <a href="//smc.org.in/downloads/fonts/rachana/Rachana.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/rachana/Rachana.woff2">WOFF2</a>, <a href="//smc.org.in/downloads/fonts/rachana/Rachana.eot">EOT</a>
                         </span>
-                        <div> Other Styles: <a class="bold">Rachana Bold </a> </div>
                     </div>
                 </div>
                 <div class="Rachana-Bold card">
@@ -284,7 +295,6 @@
                         <span>Version: 1.0 beta</span>|
                         <span>Webfonts: <a href="//smc.org.in/downloads/fonts/rachana/Rachana-Bold.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/rachana/Rachana-Bold.woff2">WOFF2</a>, <a href="//smc.org.in/downloads/fonts/rachana/Rachana-Bold.eot">EOT</a>
                         </span>
-                        <div>Other Styles: <a class="normal">Rachana Normal</a> </div>
                     </div>
                 </div>
                 <div style="clear:both"></div>
@@ -382,16 +392,6 @@
             for (var i = 0, paragraph; paragraph = paragraphs[i]; i++) {
                 paragraph.textContent = input.value;
             }
-        });
-        // FIXME - this is not the right way, but lazy for now
-        boldButton.addEventListener('click', function() {
-            var card = document.querySelector('.Rachana-Bold');
-            card.style.display = 'block'
-        });
-
-        normalButton.addEventListener('click', function() {
-            var card = document.querySelector('.Rachana-Bold');
-            card.style.display = 'none'
         });
     </script>
 </body>
