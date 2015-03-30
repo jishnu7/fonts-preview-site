@@ -24,6 +24,7 @@
   unicode-range: U+0D01-0D7F;
 }
 
+/* Rachana Bold*/
 @font-face {
   font-family: 'Rachana';
   font-style: bold;
@@ -113,5 +114,18 @@
     url(http://smc.org.in/downloads/fonts/keraleeyam/Keraleeyam.woff2?v=1.0.0-beta) format('woff2'),
     url(http://smc.org.in/downloads/fonts/keraleeyam/Keraleeyam.woff?v=1.0.0-beta) format('woff'),
     url(http://smc.org.in/downloads/fonts/keraleeyam/Keraleeyam.ttf?v=1.0.0-beta) format('truetype');
+	unicode-range: U+0D01-0D7F;
+}
+
+/* Uroob */
+@font-face {
+  font-family: 'Uroob';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://smc.org.in/downloads/fonts/uroob/Uroob.eot?v=1.0.0-beta);/* IE9 Compat Modes */
+  src: url(http://smc.org.in/downloads/fonts/uroob/Uroob.eot?v=1.0.0-beta#iefix) format('embedded-opentype'), /* IE6-IE8 */
+    url(http://smc.org.in/downloads/fonts/uroob/Uroob.woff2?v=1.0.0-beta) format('woff2'),
+    url(http://smc.org.in/downloads/fonts/uroob/Uroob.woff?v=1.0.0-beta) format('woff'),
+    url(http://smc.org.in/downloads/fonts/uroob/Uroob.ttf?v=1.0.0-beta) format('truetype');
 	unicode-range: U+0D01-0D7F;
 }
