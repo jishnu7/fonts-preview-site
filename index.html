@@ -10,37 +10,37 @@
         body {
             margin: 0;
         }
-
+        
         header > h1 {
             font-weight: normal;
             float: left;
             width: 50%;
             margin-left: 5%;
         }
-
+        
         header > h2 {
             float: right;
             margin-right: 5%;
         }
-
+        
         .desc {
             text-align: left;
             color: #333;
             font-weight: normal;
         }
-
+        
         header {
             background-color: #222;
             padding: 10px;
             color: #fff;
             height: 70px;
         }
-
+        
         #wrapper {
             width: 90%;
             margin: 20px auto;
         }
-
+        
         #columns {
             padding-top: 1em;
             -webkit-column-count: 1;
@@ -49,12 +49,12 @@
             -moz-column-count: 1;
             -moz-column-gap: 10px;
             /*-moz-column-fill: auto;*/
-
+            
             column-count: 1;
             column-gap: 15px;
             column-fill: auto;
         }
-
+        
         .card {
             display: inline-block;
             background: #f5f5f5;
@@ -74,19 +74,19 @@
             min-width: 280px;
             position: relative;
         }
-
+        
         .cards {
             position: relative;
             display: inline-block;
             margin-bottom: 50px;
         }
-
+        
         .cards .card:nth-child(1) {
             z-index: 2;
             top: 40px;
             width: 95%;
         }
-
+        
         .cards .card:nth-child(2) {
             position: absolute;
             z-index: 1;
@@ -95,19 +95,19 @@
             left: 20px;
             opacity: 0.75;
         }
-
+        
         .cards .card:hover {
             z-index: 3;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             opacity: 1;
         }
-
+        
         .card h2 {
             padding: 0 5px 0 10px;
             margin: 0;
             font-size: 12pt;
         }
-
+        
         .info h3 {
             font-size: 10pt;
             color: #252525;
@@ -117,7 +117,7 @@
             padding: 0;
             margin: 0;
         }
-
+        
         .download {
             text-decoration: none;
             color: #333;
@@ -129,13 +129,13 @@
             opacity: .5;
             margin: -10px 10px;
         }
-
+        
         .card:hover .download {
             text-decoration: underline;
             color: #0000FF;
             opacity: 1;
         }
-
+        
         .card h2 {
             font-size: 16pt;
             font-weight: normal;
@@ -143,7 +143,7 @@
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
-
+        
         .card p {
             font-size: 1em;
             color: #333;
@@ -154,7 +154,7 @@
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
-
+        
         .info {
             margin-top: 0;
             font-size: 12px;
@@ -165,74 +165,95 @@
             font-family: sans;
             line-height: 1.5em;
         }
-
+        
         .info a {
             text-decoration: none;
             color: #252525;
         }
-
+        
         .info a:hover {
             text-decoration: underline;
             cursor: pointer;
         }
-
+        
         .Chilanka {
             font-family: 'Chilanka', cursive;
         }
-
+        
         .Meera {
             font-family: 'Meera', sans;
         }
-
+        
         .Rachana {
             font-family: 'Rachana', serif;
         }
-
+        
         .Rachana-Bold {
             font-family: 'Rachana', serif;
             font-weight: 700;
         }
-
+        
         .AnjaliOldLipi {
             font-family: 'AnjaliOldLipi', sans;
         }
-
+        
         .Dyuthi {
             font-family: 'Dyuthi', sans;
             font-size: 2em;
         }
-
+        
         .Suruma {
             font-family: 'Suruma', sans;
         }
-
+        
         .Kalyani {
             font-family: 'Kalyani', sans;
         }
-
+        
         .RaghuMalayalamSans {
             font-family: 'RaghuMalayalamSans', sans;
         }
-
+        
         .Keraleeyam {
             font-family: 'Keraleeyam', sans;
             font-size: 2em;
         }
-
+        
         .Uroob {
             font-family: 'Uroob', sans;
             font-size: 2em;
         }
-
+        
         textarea {
             width: 100%;
             font-size: 1em;
             padding: 10px;
-            height: 50px;
+            height: 100px;
             border: 1px solid #eee;
             margin-bottom: 1em;
         }
-
+        
+        textarea:focus {
+            border-left: 2px solid steelblue;
+        }
+        
+        footer {
+            margin-top: 2em;
+            background-color: #222;
+            padding: 10px 50px;
+            color: #fff;
+            height: 70px;
+        }
+        
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
         @media (min-width: 480px) {
             #columns {
                 -webkit-column-count: 1;
@@ -240,7 +261,7 @@
                 column-count: 1;
             }
         }
-
+        
         @media (min-width: 600px) {
             #columns {
                 -webkit-column-count: 2;
@@ -248,7 +269,7 @@
                 column-count: 2;
             }
         }
-
+        
         @media (min-width: 960px) {
             #columns {
                 -webkit-column-count: 3;
@@ -397,20 +418,22 @@
                     <span>License: OFL 1.1</span>|
                     <span>Version: 1.0-beta</span>|
                     <span>Webfonts: <a href="//smc.org.in/downloads/fonts/uroob/Uroob.woff">WOFF</a>, <a href="//smc.org.in/downloads/fonts/uroob/Uroob.woff2">WOFF2</a>,
-                    <a href="//smc.org.in/downloads/fonts/uroob/Uroob.eot">EOT</a>
+                        <a href="//smc.org.in/downloads/fonts/uroob/Uroob.eot">EOT</a>
                     </span>
                 </div>
             </div>
         </div>
         <div class="Meera">കണ്ടുനോക്കാനുള്ള മലയാളം വാചകങ്ങള്‍ താഴെ ടൈപ്പു ചെയ്യുക.</div>
         <textarea class="Meera">സ്നേഹിക്കയില്ല ഞാന്‍, നോവുമാത്മാവിനെ സ്നേഹിച്ചിടാത്തൊരു തത്വശാസ്ത്രത്തെയും.</textarea>
-        <footer>All fonts are free licensed and source code is available at <a href="https://gitlab.com/smc/fonts">https://gitlab.com/smc/fonts</a>. <a href="//smc.org.in/downloads/fonts/smc-fonts-latest.zip">Download all fonts</a></footer>
+
     </div>
+    <footer>
+        <p><a href="//smc.org.in/downloads/fonts/smc-fonts-latest.zip">Download </a>all fonts (3.8MB Zip file)</p>
+        <p>All fonts are free licensed and source code is available at <a href="https://gitlab.com/smc/fonts">https://gitlab.com/smc/fonts</a></p>
+    </footer>
     <script>
-        var paragraphs = document.querySelectorAll('p'),
-            boldButton = document.querySelector('.bold'),
-            normalButton = document.querySelector('.normal'),
-            input = document.querySelector('textarea');
+        var paragraphs = document.querySelectorAll('.card p');
+        input = document.querySelector('textarea');
 
         input.addEventListener('input', function() {
             for (var i = 0, paragraph; paragraph = paragraphs[i]; i++) {
