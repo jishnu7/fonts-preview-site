@@ -1,0 +1,104 @@
+// main: main.less
+@import "flex.less";
+@import "mixins.less";
+@import "variables.less";
+@import "rachana.less";
+@import "meera.less";
+@import "chilanka.less";
+@import "karumbi.less";
+@import "keraleeyam.less";
+@import "uroob.less";
+@import "dyuthi.less";
+@import "suruma.less";
+@import "anjali.less";
+@import "raghumalayalamsans.less";
+
+section {
+	min-height: 50vh;
+	.flex-display;
+	.flex-justify-content(space-between);
+	border-bottom: 1px solid #f2f2f2;
+
+	.container {
+		width: 100%;
+	}
+
+	&::after,
+	&::before {
+		content: '\00a0';
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+
+	&::before {
+		margin-bottom: 1.5em;
+	}
+
+	&::after {
+		margin-top: 1.5em;
+	}
+
+	.header {
+		opacity: 0.8;
+		color: @dark-gray;
+		padding: 10px 20px;
+		.flex-display;
+		.flex-justify-content(space-between);
+
+		.font-name {
+			font-size: 2em;
+			color: @alizarin;
+		}
+
+		div.download {
+			padding: 10px;
+		}
+
+		a.download {
+			margin-top: 10px;
+			padding: 5px 10px;
+			color: @white;
+			text-decoration: none;
+			font-size: 1.2em;
+			border: 1px solid @alizarin;
+			border-radius: 30px;
+			background-color: @alizarin;
+		}
+	}
+
+	.showcase {
+		.flex-center;
+
+		.showcase-item {
+			min-height: 90vh;
+		}
+	}
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -65px;
+	visibility: hidden;
+}
+
+.section-heading {
+	text-align: center;
+}
+@media (max-width: 48em) {
+	section {
+		.header {
+			.flex-direction(column);
+			text-align: center;
+		}
+	}
+}
+
+[contenteditable] {
+	border-style: none;
+
+	&:focus {
+		outline: none;
+	}
+}
