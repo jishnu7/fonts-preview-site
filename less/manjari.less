@@ -1,0 +1,79 @@
+// main: main.less
+@import "flex.less";
+@import "mixins.less";
+@import "variables.less";
+.manjari {
+	.manjari;
+	.showcase-item {
+		width: 100%;
+	}
+	.item1 {
+		width: 100%;
+		margin: 0;
+		padding: 9em 0;
+		background-color: #4686a0;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed, fixed, fixed;
+		background: #43cea2;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #43cea2 , #185a9d);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-position: top left, center center, center center;
+		background-size: auto, cover, cover;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		h1 {
+			font-size: 5em;
+			font-weight: 100;
+		}
+		h2 {
+			font-size: 1.5em;
+			font-weight: 400;
+		}
+		p {
+			font-size: 1.5em;
+			font-weight: 100;
+		}
+	}
+	.item2,
+	.item3 {
+		article {
+			width: 50%;
+			margin: auto;
+			padding-top: 20%;
+			text-rendering: optimizeLegibility;
+		}
+		p {
+			line-height: 1.8em;
+			font-size: 1em;
+			color: #252425;
+			text-align: justify;
+			text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
+		}
+	}
+	.item4 {
+		div {
+			font-size: 100vh;
+			text-align: center;
+			background: url("../images/Manjari-Ka.png");
+			background-repeat: no-repeat;
+			background-size: 80%;
+			background-position: center center;
+			width: 90%;
+			height: 90%;
+		}
+	}
+}
+@media (max-width: 48em) {
+	.manjari {
+		.item4 {
+			div {
+				font-size: 50vh;
+				text-align: center;
+				color: @dark-gray;
+			}
+		}
+	}
+}

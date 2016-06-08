@@ -11,13 +11,19 @@
 @import "dyuthi.less";
 @import "suruma.less";
 @import "anjali.less";
+@import "manjari.less";
 @import "raghumalayalamsans.less";
 section {
+    background-color: #e2e1e0;
     min-height: 50vh;
     .container {
         .flex-display;
         .flex-direction(row);
-        width: 100%;
+        width: 80%;
+        border-radius: 2px;
+        background-color: @white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        margin: auto;
     }
     &::after,
     &::before {
@@ -35,8 +41,8 @@ section {
     .header {
         opacity: 0.8;
         color: @dark-gray;
-        padding: 40px 20px;
-        border-right: 2px solid @alizarin;
+        padding: 50px 20px;
+        border-right: 1px solid rgba(160,160,160,0.2);
         text-align: right;
         .flex(2);
         .meera;
@@ -51,21 +57,26 @@ section {
             padding: 10px;
             margin-top: 50px;
         }
+        .download-label {
+            padding: 10px 0;
+            color: #555555;
+        }
         a.download {
             margin-top: 10px;
             padding: 5px 10px;
             color: @white;
             text-decoration: none;
             font-size: 1.2em;
-            border: 1px solid @alizarin;
+            border: 1px solid @pomegranate;
             border-radius: 30px;
             background-color: @alizarin;
+            display: inline-block;
         }
     }
     .showcase {
         .flex(8);
         .showcase-item {
-            min-height: 80vh;
+            min-height: 60vh;
             bottom: 0;
         }
         .cycle-next,
@@ -116,6 +127,7 @@ a.anchor {
         }
         .header {
             text-align: center;
+            min-height: 20vh;
         }
     }
 }
