@@ -41,13 +41,15 @@
 	.item3 {
 		article {
 			width: 50%;
-			margin: auto;
-			padding-top: 20%;
+			margin: 10% auto;
+			padding: 20px 10px;
 			text-rendering: optimizeLegibility;
+			border-top: 1px solid @pomegranate;
+			border-bottom: 1px solid @pomegranate;
 		}
 		p {
-			line-height: 1.8em;
-			font-size: 1em;
+			line-height: 1.4em;
+			font-size: 1.1em;
 			color: #252425;
 			text-align: justify;
 			text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
@@ -55,7 +57,6 @@
 	}
 	.item4 {
 		div {
-			font-size: 100vh;
 			text-align: center;
 			background: url("../images/Manjari-Ka.png");
 			background-repeat: no-repeat;
@@ -63,6 +64,94 @@
 			background-position: center center;
 			width: 90%;
 			height: 90%;
+		}
+	}
+	.item5 {
+		background: #ECE9E6;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #ECE9E6 , #FFFFFF);
+		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		article {
+			width: 80%;
+			margin: 40px;
+			padding-top: 20px;
+			text-rendering: optimizeLegibility;
+			h1 {
+				font-size: 2em;
+				font-weight: 700;
+				padding: 10px 20px 0;
+				margin: 10px 20px 0 10px;
+			}
+			.author {
+				color: #555;
+				font-size: 1em;
+				padding: 0 30px;
+			}
+			.blurb {
+				background-color: @silver;
+				border-left: 10px solid @asbestos;
+				p {
+					font-size: 1.2em;
+					font-weight: 100;
+					padding: 20px;
+					line-height: 1.4em;
+					text-align: justify;
+					color: @dark-gray;
+				}
+			}
+			.main {
+				p {
+					font-size: 1em;
+					font-weight: 400;
+					padding: 20px;
+					text-align: justify;
+					line-height: 1.2em;
+					color: @dark-gray;
+					-moz-column-count: 2;
+					-moz-column-gap: 2em;
+					-webkit-column-count: 2;
+					-webkit-column-gap: 2em;
+					column-count: 2;
+					column-gap: 2em;
+				}
+			}
+		}
+	}
+	.item6 {
+		background: #16222A;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #16222A , #3A6073);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #16222A , #3A6073);
+		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		article {
+			width: 60%;
+			margin: auto;
+			padding-top: 10%;
+			text-rendering: optimizeLegibility;
+			color: @white;
+			h1 {
+				font-size: 2.4em;
+				font-weight: 100;
+				padding: 10px 20px 0;
+				margin: 10px 20px 0 0;
+			}
+			p {
+				font-size: 1.2em;
+				font-weight: 400;
+				padding: 20px;
+				text-align: justify;
+				line-height: 1.4em;
+				color: @white;
+			}
+			.lesson {
+				font-size: 1.4em;
+				font-weight: 800;
+				text-align: center;
+				color: @white;
+			}
 		}
 	}
 }
@@ -73,6 +162,20 @@
 				font-size: 50vh;
 				text-align: center;
 				color: @dark-gray;
+			}
+		}
+		.item5 {
+			article {
+				.main {
+					p {
+						column-count: 1;
+					}
+				}
+			}
+		}
+		.item6 {
+			article {
+				width: 90%;
 			}
 		}
 	}
