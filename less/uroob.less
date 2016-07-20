@@ -2,28 +2,23 @@
 @import "flex.less";
 @import "mixins.less";
 @import "variables.less";
-
 .uroob {
 	.uroob;
-
 	h1 {
-		font-size: 5em;
+		font-size: 4em;
 		text-align: center;
 		color: @white;
 	}
-
 	h2 {
 		font-size: 4em;
 		color: @white;
 		text-align: center;
 	}
-
 	h3 {
 		font-size: 3em;
 		color: @white;
 		text-align: center;
 	}
-
 	.item1 {
 		background: #136a8a;
 		/* fallback for old browsers */
@@ -34,15 +29,14 @@
 		min-height: 90vh;
 		width: 100%;
 	}
-
 	.item2 {
+		background: #136a8a;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #136a8a , #267871);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #136a8a , #267871);
+		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		color: @white;
-		background: url("../images/Seed_germination.png") no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-color: @dark-gray;
 		min-height: 90vh;
 		width: 100%;
 	}
@@ -55,11 +49,9 @@
 			margin-left: 0;
 			margin-right: 0;
 		}
-
 		h1 {
 			font-size: 3em;
 		}
-
 		h2,
 		h3 {
 			font-size: 2em;

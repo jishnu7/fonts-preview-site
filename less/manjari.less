@@ -37,8 +37,13 @@
 			font-weight: 100;
 		}
 	}
-	.item2,
-	.item3 {
+	.item2 {
+		background: #FFEEEE;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #FFEEEE , #DDEFBB);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #FFEEEE , #DDEFBB);
+		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		article {
 			width: 50%;
 			margin: 10% auto;
@@ -50,6 +55,29 @@
 		p {
 			line-height: 1.4em;
 			font-size: 1.1em;
+			color: #252425;
+			text-align: left;
+			text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
+		}
+	}
+	.item3 {
+		background: #EFEFBB;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #EFEFBB , #D4D3DD);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #EFEFBB , #D4D3DD);
+		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		article {
+			width: 80%;
+			margin: 10% auto;
+			padding: 20px 10px;
+			text-rendering: optimizeLegibility;
+			border-top: 1px solid @pomegranate;
+			border-bottom: 1px solid @pomegranate;
+		}
+		p {
+			line-height: 1.4em;
+			font-size: 1em;
 			color: #252425;
 			text-align: justify;
 			text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
@@ -153,6 +181,34 @@
 				color: @white;
 			}
 		}
+	}
+	.item7 {
+		background-image: url("../images/Manjari-Bold.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.item8 {
+		background-image: url("../images/Manjari-Elephant.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.item9 {
+		background-image: url("../images/Manjari-Vidya.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.item10 {
+		background-image: url("../images/Manjari-Mirror.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.credits {
+		color: @silver;
+		font-size: 0.8em;
 	}
 }
 @media (max-width: 48em) {
